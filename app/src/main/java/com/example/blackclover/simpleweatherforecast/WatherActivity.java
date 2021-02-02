@@ -15,7 +15,7 @@ public class WatherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_wather);
+        setContentView(R.layout.activity_wather);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().add(R.id.container,
                     new WeatherFragment()).commit();

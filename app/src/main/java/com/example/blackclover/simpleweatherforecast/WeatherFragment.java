@@ -62,7 +62,8 @@ public class WeatherFragment extends Fragment {
         new Thread() {
             @Override
             public void run() {
-                final JSONObject json = ResponseFromServer.getJSON(getActivity(), city);
+                final JSONObject json = ResponseFromServer.getJSON(getActivity(),
+                        city);
                 if (json == null) {
                     handler.post(new Runnable() {
                         @Override
@@ -80,8 +81,6 @@ public class WeatherFragment extends Fragment {
                         }
                     });
                 }
-
-
             }
         };
     }
